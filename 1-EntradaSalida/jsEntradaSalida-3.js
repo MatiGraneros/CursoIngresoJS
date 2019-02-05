@@ -4,11 +4,24 @@ function mostrar()
 {
 
 
-     elNombre.value="matias";
-
      var nombre;
 
-     nombre=elNombre.value;
+     //elNombre.value;
+
+     //document.getElementById('elNombre').value;
+     nombre=document.getElementById('elNombre').value;
+     //nombre=elNombre.value;
+	 //elNombre.value=nombre;
+
+
+
+
+
+
+
+
+
+
 
      alert(nombre);
 
