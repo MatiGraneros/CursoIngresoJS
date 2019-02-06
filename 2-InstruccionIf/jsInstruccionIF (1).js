@@ -10,7 +10,7 @@ x=document.getElementById('edad').value;
 
 
 
-	if(x===15)
+	if(x==15)
 		alert("niña bonita");	
 	
 	else;
@@ -23,3 +23,7 @@ x=document.getElementById('edad').value;
 
 
 }//FIN DE LA FUNCIÓN
+
+
+
+/*  Para if igual : == */

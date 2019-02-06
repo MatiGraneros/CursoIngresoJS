@@ -9,7 +9,7 @@ var numero1;
 var numero2;
 var entero1;
 var entero2;
-
+var resultado
 
 	numero1=document.getElementById('numeroUno').value;
 
@@ -21,7 +21,7 @@ var entero2;
 	entero2=parseInt(numero2);
 
 
-	var resultado=entero1+entero2;
+	resultado=entero1+entero2;
 
 	alert(resultado);
 
