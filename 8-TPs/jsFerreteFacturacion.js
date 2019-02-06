@@ -32,6 +32,47 @@ alert(resultado);
 }
 function Promedio () 
 {
+
+
+var precio1=document.getElementById('PrecioUno').value;
+
+var precio2=document.getElementById('PrecioDos').value;
+
+var precio3=document.getElementById('PrecioTres').value;
+
+var entero1=parseInt(precio1)
+
+var entero2=parseInt(precio2)
+
+var entero3=parseInt(precio3)
+
+var resultado=entero1+entero2+entero3;
+
+alert(resultado/3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 }
 function PrecioFinal () 
