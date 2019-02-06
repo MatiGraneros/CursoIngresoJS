@@ -56,23 +56,6 @@ alert(resultado/3);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
 }
 function PrecioFinal () 
