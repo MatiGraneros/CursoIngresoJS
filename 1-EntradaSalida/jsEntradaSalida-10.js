@@ -19,7 +19,7 @@ function mostrarAumento()
 	document.getElementById('resultado').value=y;
 
 
-
+/*            primer comando de consola              */
 
 
 
