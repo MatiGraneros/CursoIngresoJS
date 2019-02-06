@@ -7,8 +7,8 @@ function SacarResto()
 
 var numero1;
 var numero2;
-var entero1;
-var entero2;
+// var entero1;
+// var entero2;
 
 
 	numero1=document.getElementById('numeroDividendo').value;
@@ -17,7 +17,7 @@ var entero2;
 
 
 
-	entero1=parseInt(numero1);
+	//entero1=parseInt(numero1);
 	//entero2=parseInt(numero2);
 
 	
