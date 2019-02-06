@@ -17,7 +17,7 @@ var entero2;
 
 
 
-	//entero1=parseInt(numero1);
+	entero1=parseInt(numero1);
 	//entero2=parseInt(numero2);
 
 	
@@ -25,36 +25,14 @@ var entero2;
 
 	var resultado=numero1%numero2
 
-	alert("aasds"+resultado);
+	alert("El resto es "+resultado);
 
 }
 
 
-function sumar()
-{
-var numero1;
-var numero2;
-var entero1;
-var entero2;
-
-
-	numero1=document.getElementById('numeroDividendo').value;
-
-	numero2=document.getElementById('numeroDivisor').value;
-
-
-
-	entero1=parseInt(numero1);
-	entero2=parseInt(numero2);
-
-	
-	var resultado=entero1+entero2;
-
-	alert(resultado);
 
 
 	
-}
 
 
-https://cdnblog-199133.c.cdn77.org/blog/wp-content/uploads/divisiones-por-dos-cifras-1.png
+//https://cdnblog-199133.c.cdn77.org/blog/wp-content/uploads/divisiones-por-dos-cifras-1.png
