@@ -5,18 +5,14 @@ en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
 
-	var x;
+var importe=document.getElementById('importe').value;
+importe=parseInt(importe);
 
+var descuento=importe*25/100;
+var display=importe-descuento;
 
-	x=document.getElementById('importe').value;
-	
-	var entero=parseInt(x);
-
-	var y= entero-(entero*25/100);
-
-
-
-	document.getElementById('resultado').value=y;
+var display;
+document.getElementById('resultado').value=display;
 
 
 /*            primer comando de consola              */

@@ -4,28 +4,12 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
+var numero1=document.getElementById('numeroUno').value;
+var numero2=document.getElementById('numeroDos').value;
 
-var numero1;
-var numero2;
-var entero1;
-var entero2;
-var resultado
+var resultado=parseInt(numero1)+parseInt(numero2);
 
-	numero1=document.getElementById('numeroUno').value;
-
-	numero2=document.getElementById('numeroDos').value;
-
-
-
-	entero1=parseInt(numero1);
-	entero2=parseInt(numero2);
-
-
-	resultado=entero1+entero2;
-
-	alert(resultado);
-
-
+alert("La suma es: "+resultado);
 
 
 

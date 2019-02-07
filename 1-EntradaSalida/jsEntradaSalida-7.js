@@ -5,53 +5,26 @@ ej.: "la Resta es 750"*/
 function sumar()
 {	
 
-var numero1;
-var numero2;
-var entero1;
-var entero2;
+var numero1=document.getElementById('numeroUno').value;
+var numero2=document.getElementById('numeroDos').value;
+
+var resultado=parseInt(numero1)+parseInt(numero2);
+
+alert("La suma es: "+resultado);
 
 
-	numero1=document.getElementById('numeroUno').value;
-
-	numero2=document.getElementById('numeroDos').value;
-
-
-
-	entero1=parseInt(numero1);
-	entero2=parseInt(numero2);
-
-
-	var resultado=entero1+entero2;
-
-	alert("la Suma es "+resultado);
 
 }
 
 function restar()
 {
 
-var numero1;
-var numero2;
-var entero1;
-var entero2;
+var numero1=document.getElementById('numeroUno').value;
+var numero2=document.getElementById('numeroDos').value;
 
+var resultado=parseInt(numero1)-parseInt(numero2);
 
-	numero1=document.getElementById('numeroUno').value;
-
-	numero2=document.getElementById('numeroDos').value;
-
-
-
-	entero1=parseInt(numero1);
-	entero2=parseInt(numero2);
-
-
-	var resultado=entero1-entero2;
-
-	alert("la Resta es "+resultado);
-
-
-
+alert("La resta es: "+resultado);
 
 
 
@@ -63,26 +36,12 @@ function multiplicar()
 
 
 
-var numero1;
-var numero2;
-var entero1;
-var entero2;
+var numero1=document.getElementById('numeroUno').value;
+var numero2=document.getElementById('numeroDos').value;
 
+var resultado=parseInt(numero1)*parseInt(numero2);
 
-	numero1=document.getElementById('numeroUno').value;
-
-	numero2=document.getElementById('numeroDos').value;
-
-
-
-	entero1=parseInt(numero1);
-	entero2=parseInt(numero2);
-
-
-	var resultado=entero1*entero2;
-
-	alert("la Multiplicación es "+resultado);
-
+alert("La multiplicación es: "+resultado);
 
 	
 }
@@ -91,26 +50,12 @@ function dividir()
 {
 
 
-var numero1;
-var numero2;
-var entero1;
-var entero2;
+var numero1=document.getElementById('numeroUno').value;
+var numero2=document.getElementById('numeroDos').value;
 
+var resultado=parseInt(numero1)/parseInt(numero2);
 
-	numero1=document.getElementById('numeroUno').value;
-
-	numero2=document.getElementById('numeroDos').value;
-
-
-
-	entero1=parseInt(numero1);
-	entero2=parseInt(numero2);
-
-
-	var resultado=entero1/entero2;
-
-	alert("la Multiplicación es "+resultado);
-
+alert("La división es: "+resultado);
 
 }
 

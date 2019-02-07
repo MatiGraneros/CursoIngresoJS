@@ -5,28 +5,12 @@ ej.: "El resto es 0 ."*/
 function SacarResto()
 {
 
-var numero1;
-var numero2;
-// var entero1;
-// var entero2;
+var numero1=document.getElementById('numeroDividendo').value;
+var numero2=document.getElementById('numeroDivisor').value;
 
+var resultado=parseInt(numero1)%parseInt(numero2);
 
-	numero1=document.getElementById('numeroDividendo').value;
-
-	numero2=document.getElementById('numeroDivisor').value;
-
-
-
-	//entero1=parseInt(numero1);
-	//entero2=parseInt(numero2);
-
-	
-	//var resultado=entero1%entero2;
-
-	var resultado=numero1%numero2
-
-	alert("El resto es "+resultado);
-
+alert("El resto es: "+resultado);
 }
 
 

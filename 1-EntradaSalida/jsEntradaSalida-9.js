@@ -5,37 +5,14 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	var recargo;
+var importe=document.getElementById('sueldo').value;
+importe=parseInt(importe);
 
+var recargo=importe*10/100;
+var display=importe+recargo;
 
-	recargo=document.getElementById('sueldo').value;
-	
-	var entero=parseInt(recargo);
-
-	var resultado= entero+ (entero*10/100);
-
-
-
-	document.getElementById('resultado').value=resultado;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var display;
+document.getElementById('resultado').value=display;
 
 
 
