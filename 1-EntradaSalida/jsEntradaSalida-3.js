@@ -4,30 +4,34 @@ function mostrar()
 {
 
 
-     var nombre;
-
-     //elNombre.value;
-
-     //document.getElementById('elNombre').value;
+    var nombre;
      nombre=document.getElementById('elNombre').value;
-     //nombre=elNombre.value;
-	 //elNombre.value=nombre;
-
-
-
-
-
-
-
-
-
-
-
      alert(nombre);
 
 
+ 
 
 
+
+
+ /*var cosa;
+
+ cosa=document.getElementById('elNombre').value;
+
+ switch(cosa)
+ {
+ 	case 1:
+ 		{
+ 			alert(hola);
+ 			break;
+ 		}
+ 	case 2:
+ 	{
+ 			alert(chau);
+ 	}
+ }
+
+*/
 
 
 
