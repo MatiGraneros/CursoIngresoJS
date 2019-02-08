@@ -3,22 +3,32 @@ function mostrar()
 //tomo la edad  
 
 
-var edad1;
-edad1=document.getElementById('edad').value;
+// var edad1;
+// edad1=document.getElementById('edad').value;
 
 
 
 
-if(edad1<17)
-	alert("usted es adolescente");
+// if(edad1<17)
+// 	alert("usted es adolescente");
 
 
-	else if(edad1>13)
+// 	else if(edad1>13)
 
-		alert("usted es adolescente")
+// 		alert("usted es adolescente")
 
-else
-	alert("es menor de edad");
+// else
+// 	alert("es menor de edad");
+
+
+
+
+
+
+/*--------------------------------------------------------*/
+
+
+
 
 // switch(edad.value) {
 //   case 13:
@@ -37,7 +47,20 @@ else
 
 
 
+var edad1;
+edad1=document.getElementById('edad').value;
 
+
+
+
+if(17>=edad1 && edad1>=13){
+	alert("usted es adolescente");
+}
+
+
+else{
+	alert("usted no es un nenazo");
+}
 
 
 
