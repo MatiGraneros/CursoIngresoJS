@@ -43,7 +43,7 @@ var largo=document.getElementById('Largo').value;
 var ancho=document.getElementById('Ancho').value;
 	
 
-var materiales=(largo*ancho)*(largo*ancho);
+var materiales=(largo*ancho)//*(largo*ancho);
 
 var cemento=2*materiales;
 var cal=3*materiales;
