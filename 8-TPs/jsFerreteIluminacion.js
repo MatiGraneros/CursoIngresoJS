@@ -15,33 +15,33 @@ function CalcularPrecio ()
 
 var cantlamp=document.getElementById('Cantidad').value;
 var descuento=document.getElementById('precioDescuento').value;
+var marca=document.getElementById('Marca').value;
+
+var preciofinal=cantlamp*35	
 
 	if(cantlamp>=6){
-	var preciofinal=cantlamp*35;
 	var preciofinaldescuento=preciofinal*50/100;
 		descuento=preciofinaldescuento;
 
 			document.getElementById('precioDescuento').value=descuento;
 		}
+	
+	else if(marca=="ArgentinaLuz" && cantlamp==5){
+	var preciofinaldescuento2=preciofinal*40/100;
+	var preciofinaldescuento2=(preciofinal-preciofinaldescuento2)
+	descuento=preciofinaldescuento2; ///////XXXXXXXXXXXXXXX
+	console.log(descuento);
+		}
+
 	else{
 		document.getElementById('precioDescuento').value=cantlamp*35;
-	}
+		}
 
 
-/*B*/
 
-var desplegable=document.getElementById('Marca').value;
-	if(desplegable=="ArgentinaLuz" && cantlamp==5){
-	preciofinal=cantlamp*35;
-	preciofinaldescuento=preciofinal*40/100;
-		descuento=preciofinaldescuento;
-	}
-		
-	else{ (desplegable=="ArgentinaLuz" && cantlamp==5)
-	preciofinal=cantlamp*35;
-	preciofinaldescuento=preciofinal*30/100;
-		descuento=preciofinaldescuento;
-	}
+
+
+	
 
 
 
