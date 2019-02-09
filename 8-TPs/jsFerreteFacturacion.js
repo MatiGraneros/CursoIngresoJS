@@ -12,11 +12,11 @@ var precio2=document.getElementById('PrecioDos').value;
 
 var precio3=document.getElementById('PrecioTres').value;
 
-var entero1=parseInt(precio1)
+var entero1=parseInt(precio1);
 
-var entero2=parseInt(precio2)
+var entero2=parseInt(precio2);
 
-var entero3=parseInt(precio3)
+var entero3=parseInt(precio3);
 
 var resultado=entero1+entero2+entero3;
 
