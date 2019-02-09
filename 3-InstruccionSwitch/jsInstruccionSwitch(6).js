@@ -4,31 +4,27 @@ function mostrar()
 var laHora = document.getElementById('hora').value;
 
 
- var mañana=(laHora>=7 && laHora<=11);
- var tarde=(laHora>=12 && laHora<=19);
+var mañana=(laHora>=7 && laHora<=11);
+var tarde=(laHora>=12 && laHora<=19);
 
-
+var dia=(laHora>=1 && laHora<=24)
 
 // if(laHora>=7 && laHora<=11){
 
-//  switch(mañana){
-// 	case mañana:
-// 	alert("Es de mañana.")
-// 	break;
-// 	}	
-
-// else if(laHora>=12 && laHora<=19){
-
-//  switch(tarde){
-// 	case mañana:
-// 	alert("Es de tarde")
-// 	break;
-// 	}
-
-switch(laHora){
+ switch(dia){
 	case mañana:
-	alert("es de mañana")
+	alert("Es de mañana.")
 	break;
+	
+	case tarde:
+	alert("Es de tarde")
+	break;
+	}
+{
+// switch(laHora){
+// 	case mañana:
+// 	alert("es de mañana")
+// 	break;
 }
 
 

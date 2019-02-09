@@ -3,12 +3,15 @@ function mostrar()
 //tomo la edad  
 var laHora = document.getElementById('hora').value;
 
-//alert (laHora);
-	
+var mañana=(laHora>=7 && laHora<=11);
+
+
 if(laHora>=7 && laHora<=11){
-	alert("es de mañana");
-}	
-	
 
-
+ 	switch(mañana){
+	case mañana:
+	alert("Es de mañana.")
+	break;
+	}
+}
 }//FIN DE LA FUNCIÓN

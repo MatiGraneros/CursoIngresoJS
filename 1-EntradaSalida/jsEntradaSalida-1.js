@@ -4,3 +4,4 @@ function mostrar()
 	alert("Hola");
 }
 
+// readonly placeholder
