@@ -6,8 +6,9 @@ var x;
 x=document.getElementById('edad').value;
 
 
-if(x>=18)
+if(x>=18){
 	alert("es mayor de edad");
+}
 
 else;
 
