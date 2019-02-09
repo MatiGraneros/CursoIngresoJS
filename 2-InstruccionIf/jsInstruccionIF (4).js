@@ -59,7 +59,7 @@ if(17>=edad1 && edad1>=13){
 
 
 else{
-	alert("usted no es un nenazo");
+	
 }
 
 

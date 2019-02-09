@@ -30,10 +30,10 @@ var descuento=document.getElementById('precioDescuento').value;
 
 /*B*/
 
-// var desplegable=document.getElementById('Marca').value;
-// 	if(desplegable="ArgentinaLuz")
-// 		preciofinaldescuento=preciofinal*40/100;
-// 		descuento=preciofinal-preciofinaldescuento;
+var desplegable=document.getElementById('Marca').value;
+	if(desplegable="ArgentinaLuz")
+		preciofinaldescuento=preciofinal*40/100;
+		descuento=preciofinal-preciofinaldescuento;
 
 
 
