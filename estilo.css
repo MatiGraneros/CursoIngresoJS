@@ -21,7 +21,7 @@ html {
 }
 
 .header {
-  background-color: rgb(14, 26, 112);;
+  background-color: rgb(0,0,0);;
   color: #ffffff;
   padding: 15px;
 }
@@ -110,7 +110,7 @@ color:black;
 }
 
 .footer {
-  background-color: #0099cc;
+  background-color: black;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
@@ -166,6 +166,7 @@ body {
   margin: 0 auto;
   color:#f0f0f0;
   background:#3f51b5;
+  background-image: url("http://anband.spb.ru/images/000/DSC100078521.jpg");
   font-family:'Open Sans',sans-serif;
 }
 
