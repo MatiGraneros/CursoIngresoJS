@@ -31,11 +31,17 @@ var descuento=document.getElementById('precioDescuento').value;
 /*B*/
 
 var desplegable=document.getElementById('Marca').value;
-	if(desplegable="ArgentinaLuz")
-		preciofinaldescuento=preciofinal*40/100;
-		descuento=preciofinal-preciofinaldescuento;
-
-
+	if(desplegable=="ArgentinaLuz" && cantlamp==5){
+	preciofinal=cantlamp*35;
+	preciofinaldescuento=preciofinal*40/100;
+		descuento=preciofinaldescuento;
+	}
+		
+	else{ (desplegable=="ArgentinaLuz" && cantlamp==5)
+	preciofinal=cantlamp*35;
+	preciofinaldescuento=preciofinal*30/100;
+		descuento=preciofinaldescuento;
+	}
 
 
 
