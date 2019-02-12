@@ -34,13 +34,13 @@ var preciofinal=cantlamp*35
 		}
 
 	else if((marca=="ArgentinaLuz" || marca=="FelipeLamparas") && cantlamp==4){
-	var descuentoArgLuz=preciofinal*25/100;
+	var descuentoArgLuz=preciofinal*250/100;
 	finalArgLuz=(preciofinal-descuentoArgLuz);
 	descuento=finalArgLuz; 
 	document.getElementById('precioDescuento').value=descuento;
 }
 
-	else{
+	else {
 		document.getElementById('precioDescuento').value=cantlamp*35;
 		}
 
