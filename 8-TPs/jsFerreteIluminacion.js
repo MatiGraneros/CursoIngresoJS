@@ -20,22 +20,30 @@ var marca=document.getElementById('Marca').value;
 var preciofinal=cantlamp*35	
 
 	if(cantlamp>=6){
-	var preciofinaldescuento=preciofinal*50/100;
-		descuento=preciofinaldescuento;
+	var precioFinalDescuento=preciofinal*50/100;
+		descuento=precioFinalDescuento;
 
 			document.getElementById('precioDescuento').value=descuento;
 		}
 	
 	else if(marca=="ArgentinaLuz" && cantlamp==5){
-	var preciofinaldescuento2=preciofinal*40/100;
-	var preciofinaldescuento2=(preciofinal-preciofinaldescuento2)
-	descuento=preciofinaldescuento2; ///////XXXXXXXXXXXXXXX
-	console.log(descuento);
+	var descuentoArgLuz=preciofinal*40/100;
+	finalArgLuz=(preciofinal-descuentoArgLuz);
+	descuento=finalArgLuz; 
+	document.getElementById('precioDescuento').value=descuento;
 		}
+
+	else if((marca=="ArgentinaLuz" || marca=="FelipeLamparas") && cantlamp==4){
+	var descuentoArgLuz=preciofinal*25/100;
+	finalArgLuz=(preciofinal-descuentoArgLuz);
+	descuento=finalArgLuz; 
+	document.getElementById('precioDescuento').value=descuento;
+}
 
 	else{
 		document.getElementById('precioDescuento').value=cantlamp*35;
 		}
+
 
 
 

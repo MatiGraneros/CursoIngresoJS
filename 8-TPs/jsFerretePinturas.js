@@ -6,10 +6,17 @@ function FahrenheitCentigrados ()
 {
 
 
-var temperatura=document.getElementById('Temperatura').value;
+var temperatura
+var Fahrenheit
+var resultado
+var Celcius
 
+temperatura=document.getElementById('Temperatura').value;
+Fahrenheit=(temperatura-32)*(5/9);
 
-alert((temperatura-32)*(5/9))
+resultado=parseFloat(Fahrenheit);
+
+alert(resultado);
 
 
 }
@@ -17,9 +24,15 @@ alert((temperatura-32)*(5/9))
 function CentigradosFahrenheit () 
 {
 	
-var temperatura=document.getElementById('Temperatura').value;
 
-alert(temperatura*(9/5)+32);
+temperatura=document.getElementById('Temperatura').value;
+celcius=(temperatura*(9/5)+32);
+
+resultado=parseFloat(celcius);
+
+alert(resultado);
+
+
 
 
 
