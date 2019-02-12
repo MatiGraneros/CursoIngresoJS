@@ -52,11 +52,11 @@ var resultado;
 
 	precio3=document.getElementById('PrecioTres').value;
 
-	entero1=parseInt(precio1)
+	entero1=parseInt(precio1);
 
-	entero2=parseInt(precio2)
+	entero2=parseInt(precio2);
 
-	entero3=parseInt(precio3)
+	entero3=parseInt(precio3);
 
  		resultado=entero1+entero2+entero3;
 
@@ -87,17 +87,17 @@ var resultado;
 
 	precio3=document.getElementById('PrecioTres').value;
 
-	entero1=parseInt(precio1)
+	entero1=parseInt(precio1);
 
-	entero2=parseInt(precio2)
+	entero2=parseInt(precio2);
 
-	entero3=parseInt(precio3)
+	entero3=parseInt(precio3);
 
 		resultado=entero1+entero2+entero3;
 
-			IVA=resultado*21/100
+			IVA=resultado*21/100;
 
-				preciofinal=resultado+IVA
+				preciofinal=resultado+IVA;
 
 					alert(preciofinal);
 
