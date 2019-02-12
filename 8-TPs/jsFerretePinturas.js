@@ -6,32 +6,35 @@ function FahrenheitCentigrados ()
 {
 
 
-var temperatura
-var Fahrenheit
-var resultado
-var Celcius
+var temperatura;
+var Fahrenheit;
+var resultado;
 
-temperatura=document.getElementById('Temperatura').value;
-Fahrenheit=(temperatura-32)*(5/9);
 
-resultado=parseFloat(Fahrenheit);
+	temperatura=document.getElementById('Temperatura').value;
+	Fahrenheit=(temperatura-32)*(5/9);
 
-alert(resultado);
+		resultado=parseFloat(Fahrenheit);
+
+			alert("La temperatura de Fahrenheit a Centígrados es: "+resultado);
 
 
 }
 
 function CentigradosFahrenheit () 
 {
-	
 
-temperatura=document.getElementById('Temperatura').value;
-celcius=(temperatura*(9/5)+32);
 
-resultado=parseFloat(celcius);
+var temperatura;
+var Celcius;	
+var resultado;
 
-alert(resultado);
+	temperatura=document.getElementById('Temperatura').value;
+	celcius=(temperatura*(9/5)+32);
 
+		resultado=parseFloat(Celcius);
+
+			alert("La temperatura de Centígrados a Fahrenheit es: "+resultado);
 
 
 
