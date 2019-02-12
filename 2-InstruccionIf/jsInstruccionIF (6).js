@@ -13,20 +13,34 @@ var edad1;
 			alert("es mayor de edad");
 			}
 		
-		else if(17>=edad1 && edad1>=13)
-			{
-			alert("usted es adolescente");
-			}
+			if(17>=edad1 && edad1>=13)
+				{
+				alert("usted es adolescente");
+				}
 		
-		else
-			{
-			alert("usted es un niño");
-			}
+				if(12>=edad1 && edad1>=1)
+					{
+					alert("usted es un niño");
+					}
 	
 
 
 
 
+		if(!(17>=edad1 && edad1>=13))
+				{
+				if(edad1>=18)
+					alert("es mayor de edad");
+						if(edad1<=12)
+							alert("usted es un niño");
+				}
+
+		if(17>=edad1 && edad1>=13)
+				{
+				alert("usted es adolescente");
+				}
+
+		
 
 
 
@@ -35,7 +49,17 @@ var edad1;
 
 
 
-	}
+
+		if(edad1>0)
+			{
+			if (edad<12)
+			}
+
+
+
+
+
+	
 
 
 

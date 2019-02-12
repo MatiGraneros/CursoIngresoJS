@@ -12,8 +12,26 @@ var edad1
  			alert("Es soltero y no es menor.");
  			}
  
+ 		
 
 
+
+ 		if((!edad1<=18)  && estadoCivil=="Soltero")
+ 			{
+ 			alert("Es soltero y no es menor.");
+ 			}
+
+
+
+
+
+ 		if(edad1>=18)
+ 		{
+ 			if(estadoCivil=="Soltero")
+ 			{
+ 				alert("Es soltero y no es menor.");
+ 			}
+ 		}
 
 
 
