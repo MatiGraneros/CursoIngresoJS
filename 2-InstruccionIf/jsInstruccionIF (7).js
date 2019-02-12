@@ -2,13 +2,20 @@ function mostrar()
 {
 //tomo la edad  
 
-	var estcivil=document.getElementById('estadoCivil').value;
-	var edad1=document.getElementById('edad').value;
+	var estadoCivil
+	var edad1
+		estadoCivil=document.getElementById('estadoCivil').value;
+		edad1=document.getElementById('edad').value;
+			edad1=parseInt(edad1);
 
 
-if (edad1<18 && estcivil=="Casado")
-      alert("Es muy pequeño para NO ser soltero.");	
+			if (edad1<18 && estadoCivil=="Casado")
+				{
+      			alert("Es muy pequeño para NO ser soltero.");	
+				}
   
-else if (edad1<18 && estcivil=="Divorciado")
-      alert("Es muy pequeño para NO ser soltero.");
+			else if (edad1<18 && estadoCivil=="Divorciado")
+				{
+      			alert("Es muy pequeño para NO ser soltero.");
+				}
 }//FIN DE LA FUNCIÓN
