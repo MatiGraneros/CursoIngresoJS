@@ -3,23 +3,23 @@ function mostrar()
 	//Genero el número RANDOM entre 1 y 10 
 	
 
-var nroran=Math.floor(Math.random()*11);
+var nroran=Math.floor(Math.random()*10)+1;
 
 	
 
 if(nroran>=9)
 {
-	alert(nroran+" EXCELENTE");
+	console.log(nroran+" EXCELENTE");
 }
 
-else if(4<=nroran && nroran<=8)
+if(4<=nroran && nroran<=8)
 {
-	alert(nroran+" APROBÓ");
+	console.log(nroran+" APROBÓ");
 }
 
-else if(nroran<4)
+if(nroran<4)
 {
-	alert(nroran+" Vamos, la proxima se puede");
+	console.log(nroran+" Vamos, la proxima se puede");
 }
 
 

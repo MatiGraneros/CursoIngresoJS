@@ -5,9 +5,9 @@ function mostrar()
 
 
 
-var nroran=Math.floor(Math.random()*11);
+var numeroRandom=Math.floor(Math.random() * 10) + 1;
 
-alert(nroran);
+console.log(numeroRandom);
 
 
 

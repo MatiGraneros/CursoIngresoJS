@@ -21,7 +21,10 @@ var resultado;
 
 
 
+// -10
+// -15
 
+// tarjeta +10
 
 
 
