@@ -1,15 +1,24 @@
 function mostrar()
 {
 
-var precio=prompt("Precio");
+var precio;
+var descuento;
+var descontado;
+var preciofinal;
 
-var descuento=prompt("Porcentaje de descuento");
+	precio=prompt("Precio");
+		precio=parseInt(precio);
 
-var descontado=precio*descuento/100;
+	descuento=prompt("Porcentaje de descuento");
+		descuento=parseInt(descuento);
 
-var preciofinal=precio-descontado;
+	descontado=precio*descuento/100;
+		descontado=parseInt(descontado);
 
-document.getElementById('elPrecioFinal').value=preciofinal;
+	preciofinal=precio-descontado;
+		preciofinal=parseInt(preciofinal);
+
+			document.getElementById('elPrecioFinal').value=preciofinal;
 
 
 

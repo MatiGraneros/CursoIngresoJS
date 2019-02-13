@@ -3,20 +3,25 @@ function mostrar()
 {
 
 
-var ancho=prompt("ingrese ancho del rectangulo");
+var ancho;
+var largo;
+var total1;
+var total2;
+var resultado;
 
-var largo=prompt("ingrese largo del rectangulo");
+	ancho=prompt("ingrese ancho del rectangulo");
+	largo=prompt("ingrese largo del rectangulo");
+
+		parseInt(ancho);
+		parseInt(largo);
+
+			total1=ancho*2;
+			total2=largo*2;
 
 
+				resultado=total1+total2;
 
-var total1=ancho*2;
-
-var total2=largo*2;
-
-
-var resultado=total1+total2;
-
-alert(resultado);
+					alert("El perímetro es "+resultado);
 
 
 
