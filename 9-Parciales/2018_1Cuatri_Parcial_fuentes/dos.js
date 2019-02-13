@@ -12,7 +12,7 @@ var resultado;
 		porcentaje=precioEfectivo*10/100;
 			porcentaje=parseInt(porcentaje);
 	
-			resultado=precioEfectivo-porcentaje
+			resultado=precioEfectivo-porcentaje;
 	  			resultado=parseInt(resultado);
 
 
