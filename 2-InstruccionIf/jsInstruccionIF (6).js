@@ -11,16 +11,16 @@ var edad1;
 		if(edad1>=18)
 				{
 				alert("usted es mayor de edad");
-					else
+				}
+				else
 					{
 						if(edad1<=12)
 						{
-							alert("aaaa");	
+							alert("aaaa");						
 						}
-						
+						else
+							alert("ooooo");
 					}
-				}
-				
 				
 				
 
