@@ -10,10 +10,7 @@ while(numero<10)
 {
 	numero=numero+1;
 	console.log("numero "+numero);
-
-
-
-
+	alert("numero "+numero);
 }
 
 
