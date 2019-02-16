@@ -1,30 +1,22 @@
 function mostrar()
 {
-//tomo la edad  
-// var laHora = document.getElementById('hora').value;
-
-// var mañana=(laHora>=7 && laHora<=11);
 
 
-// if(laHora>=7 && laHora<=11){
+var hora;
+var mañana;
 
-//  	switch(mañana){
-// 	case mañana:
-// 	alert("Es de mañana.")
-// 	break;
-// 	}
-// }
+hora=document.getElementById('hora').value;
+mañana=(hora>6 && hora<12)
 
 
-var laHora = document.getElementById('hora').value;
-var mañana=(laHora>=7 && laHora<=11);
-
- switch(mañana)
- {
-	case mañana:
+switch(mañana)
+{
+	case true:
 	alert("Es de mañana.")
 	break;
 }
+
+
 
 
 }//FIN DE LA FUNCIÓN

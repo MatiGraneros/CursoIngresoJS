@@ -8,7 +8,8 @@ var mesDelAño = document.getElementById('mes').value;
 
 // if(mesDelAño==)
 	
-switch(mesDelAño){
+switch(mesDelAño)
+{
 		case "Enero":
 		alert("Tiene 31 días")
 		break;
