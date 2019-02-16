@@ -3,19 +3,18 @@ function mostrar()
 	// alert('iteración while');
 
 
-// var numeroRandom=Math.floor(Math.random()*10)+1;
+var numero=0;
+	numero=parseInt(numero);
 
-numeroRandom=prompt("aaaa");
-numeroRandom=parseInt(numeroRandom);
-
-	
-while(numeroRandom<10)
+while(numero<10)
 {
-	console.log("numero "+numeroRandom+1);
+	numero=numero+1;
+	console.log("numero "+numero);
+
+
+
+
 }
-
-
-
 
 
 
