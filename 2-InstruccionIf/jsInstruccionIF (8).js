@@ -7,33 +7,19 @@ var edad1
 	estadoCivil=document.getElementById('estadoCivil').value;
 	edad1=document.getElementById('edad').value;
 
- 		if(edad1>=18 && estadoCivil=="Soltero")
- 			{
- 			alert("Es soltero y no es menor.");
- 			}
- 
- 		
+	if(edad1<18)
+	{
+		if(estadoCivil!="Soltero");
+	}
 
-
-
- 		if((!edad1<=18)  && estadoCivil=="Soltero")
- 			{
- 			alert("Es soltero y no es menor.");
- 			}
-
-
-
-
-
- 		if(edad1>=18)
- 		{
- 			if(estadoCivil=="Soltero")
- 			{
- 				alert("Es soltero y no es menor.");
- 			}
- 		}
-
-
+	else
+	{
+		if(edad1>17);
+			if(estadoCivil=="Soltero")
+			{
+				alert("Es soltero y no es menor.");
+			}
+	}
 
 
 

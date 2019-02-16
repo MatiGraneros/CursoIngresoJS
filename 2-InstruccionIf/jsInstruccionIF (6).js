@@ -8,20 +8,23 @@ var edad1;
 	edad1=parseInt(edad1);
 	
 
-		if(edad1>=18)
-				{
-				alert("usted es mayor de edad");
-				}
-				else
-					{
-						if(edad1<=12)
-						{
-							alert("aaaa");						
-						}
-						else
-							alert("ooooo");
-					}
-				
+if(edad1<13)
+{
+	alert("Usted es un niño");
+}
+
+	
+	else
+	{
+		if(edad1>17)
+		{
+		alert("Usted es un adulto");	
+		}
+			else 
+			{
+				alert("usted es un adolescente");
+			}
+	}
 				
 
 }//FIN DE LA FUNCIÓN

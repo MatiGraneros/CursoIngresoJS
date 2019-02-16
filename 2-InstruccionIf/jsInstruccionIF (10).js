@@ -3,24 +3,29 @@ function mostrar()
 	//Genero el número RANDOM entre 1 y 10 
 	
 
-var nroran=Math.floor(Math.random()*10)+1;
+var numeroRandom=Math.floor(Math.random()*10)+1;
 
 	
 
-if(nroran>=9)
+if(numeroRandom>=9)
 {
-	console.log(nroran+" EXCELENTE");
+	console.log(numeroRandom+" EXCELENTE");
 }
 
-if(4<=nroran && nroran<=8)
+else 
+	{
+		if(4<=numeroRandom && numeroRandom<=8)
+		{
+			console.log(numeroRandom+" APROBÓ");
+		}
+	}
+
+
+if(numeroRandom<4)
 {
-	console.log(nroran+" APROBÓ");
+	console.log(numeroRandom+" Vamos, la proxima se puede");
 }
 
-if(nroran<4)
-{
-	console.log(nroran+" Vamos, la proxima se puede");
-}
 
 
 

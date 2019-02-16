@@ -12,21 +12,14 @@ var edad1;
 			alert("es mayor de edad");
 			}
 			
-		if(edad1<18)
+		else
 			{
 			alert("es menor de edad");
 			}
 	
-		if(edad1>=18)
-			{
-			alert("es mayor de edad");
-			}
-			
-		else
-			{
-			alert("es mayor de edad");
-			}
 
+			
+	
 
 
 

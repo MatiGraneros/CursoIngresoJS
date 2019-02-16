@@ -12,20 +12,10 @@ var edad1;
 			alert("Usted NO es adolescente");
 			}
 
-		if (edad1<13)
+		else
 			{
-			alert("Usted NO es adolescente");
-			}
-
-		if(edad1>17 || edad1<13)
-			{
-			alert("Usted NO es adolescente");
-			}
-
-
-		if (!(edad1<17  edad1>13))
-			{
-			alert("Usted NO es adolescente");
+			if(edad1<13)
+				alert("Usted NO es adolescente");
 			}
 
 
