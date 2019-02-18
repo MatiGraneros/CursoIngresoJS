@@ -16,43 +16,41 @@ var cantidadLamparas
 var descuento
 var marca
 var precioFinal
+var precioDescuento
 
-var cantidadLamparas=document.getElementById('Cantidad').value;
-var descuento=document.getElementById('precioDescuento').value;
-var marca=document.getElementById('Marca').value;
+ cantidadLamparas=document.getElementById('Cantidad').value;
+ descuento=document.getElementById('precioDescuento').value;
+ marca=document.getElementById('Marca').value;
+ precioFinal=cantidadLamparas*35	
 
-var precioFinal=cantidadLamparas*35	
 
-	if(cantidadLamparas>=6){
-	var precioFinalDescuento=precioFinal*50/100;
-		descuento=precioFinalDescuento;
+if (cantidadLamparas==6)
+ {
+ 	precioDescuento=precioFinal*50/100;
+ 	descuento=precioFinal-precioDescuento;
+ 	alert(descuento);
+ }
 
-			document.getElementById('precioDescuento').value=descuento;
-		}
-	
-	else if(marca=="ArgentinaLuz" && cantidadLamparas==5){
-	var descuentoArgLuz=precioFinal*40/100;
-	finalArgLuz=(precioFinal-descuentoArgLuz);
-	descuento=finalArgLuz; 
-	document.getElementById('precioDescuento').value=descuento;
-		}
+else
+{
+	 	if (marca=="ArgentinaLuz")
+ 	 {
+ 	 	if(cantidadLamparas==4)
+ 	 	{
+ 	 		precioDescuento=precioFinal*40/100;
+ 			descuento=precioFinal-precioDescuento;
+ 			alert(descuento);
+ 	 	}
+ 	 	
+ 	 }
 
-	else if((marca=="ArgentinaLuz" || marca=="FelipeLamparas") && cantidadLamparas==4){
-	var descuentoArgLuz=precioFinal*250/100;
-	finalArgLuz=(precioFinal-descuentoArgLuz);
-	descuento=finalArgLuz; 
-	document.getElementById('precioDescuento').value=descuento;
+ 	 	else
+ 	 	{
+ 	 		precioDescuento=precioFinal*30/100;
+ 			descuento=precioFinal-precioDescuento;
+ 			alert(descuento);
+ 	 	}
 }
-
-	else {
-		document.getElementById('precioDescuento').value=cantidadLamparas*35;
-		}
-
-
-
-
-
-
 	
 
 
