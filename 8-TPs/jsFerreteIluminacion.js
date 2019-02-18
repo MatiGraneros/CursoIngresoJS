@@ -25,34 +25,109 @@ var precioDescuento
 
 
 if (cantidadLamparas==6)
- {
+{
  	precioDescuento=precioFinal*50/100;
+ 	precioDescuento=parseFloat(precioDescuento);
  	descuento=precioFinal-precioDescuento;
- 	alert(descuento);
- }
+ 	descuento=parseFloat(descuento);
+ 	// alert(descuento);
+}
 
 else
 {
-	 	if (marca=="ArgentinaLuz")
- 	 {
- 	 	if(cantidadLamparas==4)
+	if (marca=="ArgentinaLuz")
+ 	{
+ 	 	if(cantidadLamparas==5)
  	 	{
  	 		precioDescuento=precioFinal*40/100;
+ 			precioDescuento=parseFloat(precioDescuento);
  			descuento=precioFinal-precioDescuento;
- 			alert(descuento);
+ 			descuento=parseFloat(descuento);
+ 			// alert(descuento);
  	 	}
  	 	
- 	 }
+ 	}
 
  	 	else
  	 	{
- 	 		precioDescuento=precioFinal*30/100;
- 			descuento=precioFinal-precioDescuento;
- 			alert(descuento);
+ 	 		if(cantidadLamparas==5)
+ 	 		{
+ 	 			precioDescuento=precioFinal*30/100;
+ 				precioDescuento=parseFloat(precioDescuento);
+ 				descuento=precioFinal-precioDescuento;
+ 				descuento=parseFloat(descuento);
+
+ 				// alert(descuento);
+ 	 		}		
  	 	}
 }
+
+if (marca=="ArgentinaLuz" || marca=="FelipeLamparas") 
+{
+	if (cantidadLamparas==4)
+	{
+		precioDescuento=precioFinal*25/100;
+	 	precioDescuento=parseFloat(precioDescuento);
+	 	descuento=precioFinal-precioDescuento;
+	 	descuento=parseFloat(descuento);
+	 	// alert(descuento);
+	}
 	
+}
+	else
+	{
+		precioDescuento=precioFinal*20/100;
+ 		precioDescuento=parseFloat(precioDescuento);
+ 		descuento=precioFinal-precioDescuento;
+ 		descuento=parseFloat(descuento);
+ 		// alert(descuento);
+	}
+
+if (marca=="ArgentinaLuz") 
+{
+	if (cantidadLamparas==3)
+	{
+		precioDescuento=precioFinal*15/100;
+	 	precioDescuento=parseFloat(precioDescuento);
+	 	descuento=precioFinal-precioDescuento;
+	 	descuento=parseFloat(descuento);
+	 	// alert(descuento);
+		
+	}
+	
+}
+	else
+	{
+		if (marca=="FelipeLamparas") 
+		{
+			precioDescuento=precioFinal*10/100;
+		 	precioDescuento=parseFloat(precioDescuento);
+		 	descuento=precioFinal-precioDescuento;
+		 	descuento=parseFloat(descuento);
+		 	// alert(descuento);
+		}	
+		else	
+			{
+				if (cantidadLamparas==3) 
+				{
+				precioDescuento=precioFinal*5/100;
+				descuento=precioFinal-precioDescuento;
+			 	descuento=parseFloat(descuento);
+			 	// alert(descuento);
+				}
+					
+			}
+	}
+
+
+
+
+
+alert(descuento);
+
+
 
 
 
 }
+	
