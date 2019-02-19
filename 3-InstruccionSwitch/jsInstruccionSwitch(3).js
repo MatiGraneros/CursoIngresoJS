@@ -8,16 +8,25 @@ var mesDelAño = document.getElementById('mes').value;
 	switch(mesDelAño=="Febrero")
 	{
 		case true:
-		alert("Este mes no tiene más de 29 días.")
-		break;
+			console.log("Este mes no tiene más de 29 días.")
+			break;
 	
 		case false:
-		alert("Este mes tiene 30 o más días")
-		break;
+			console.log("Este mes tiene 30 o más días")
+			break;
 	 }
 
 
+	switch(mesDelAño)
+	{
+		case "Febrero":
+			console.log("Este mes no tiene más de 29 días.")
+			break;
 	
+		default:
+			console.log("Este mes tiene 30 o más días")
+			break;
+	 }
 
 
 

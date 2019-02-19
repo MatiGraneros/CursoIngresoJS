@@ -23,6 +23,34 @@ var precioDescuento;
  precioBruto=cantidadLamparas*35;
  console.log(precioBruto);
 
+// switch(cantidadLamparas)
+// {
+// 	case 5:
+// 		switch(marca)
+// 		{
+// 			case "ArgentinaLuz":
+// 				descuento=60; 
+// 					break;
+// 			case "FelipeLamparas":
+// 				descuento=70; 
+// 					break;
+// 		}
+	
+// 		break;
+// 	case 4:
+// 		if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+// 			{
+// 				descuento=25;			 	
+// 			}else
+// 			{
+// 				descuento=80;			 	
+// 			}//if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+// 		break;
+
+// }
+
+
+
 if (cantidadLamparas>5)
 {
  	descuento=50;  	
@@ -45,7 +73,7 @@ else
 		{
 			if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
 			{
-				descuento=25;			 	
+				descuento=75;			 	
 			}else
 			{
 				descuento=80;			 	
