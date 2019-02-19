@@ -1,21 +1,19 @@
 function mostrar()
 {
 
+var hora=document.getElementById('hora').value;
+hora=parseFloat(hora)
 
-var hora;
-var mañana;
-
-hora=document.getElementById('hora').value;
-mañana=(hora>6 && hora<12)
-
-
-switch(mañana)
+switch(hora)
 {
-	case true:
-	alert("Es de mañana.")
-	break;
+	case 7:
+	case 8:
+	case 9:
+	case 10:	
+	case 11:
+		console.log("mañana")
+		break;			
 }
-
 
 
 
