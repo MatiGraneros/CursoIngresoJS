@@ -2,6 +2,7 @@ function mostrar()
 {
 //tomo la edad  
 var mesDelAño = document.getElementById('mes').value;
+var mensaje
 
 //console.log (mesDelAño);
 
@@ -12,21 +13,21 @@ switch(mesDelAño)
 		case "Octubre":
 		case "Noviembre":
 		case "Diciembre":
-			console.log("Ya pasamos el frio, ahora calor!!!.")
+			mensaje=("Ya pasamos el frio, ahora calor!!!.")
 			break;	
 
 		case "Julio":
 		case "Agosto":
-			console.log("Abrigate que hace frio.")
+			mensaje=("Abrigate que hace frio.")
 			break;
 
 		default:
-		console.log("Falta para el invierno.")
-		break;
+			mensaje=("Falta para el invierno.")
+			break;
 		
 	}
 
-
+alert(mensaje);
 
 
 

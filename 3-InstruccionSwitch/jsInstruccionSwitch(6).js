@@ -3,6 +3,7 @@ function mostrar()
 //tomo la edad  
 var laHora = document.getElementById('hora').value;
 laHora=parseFloat(laHora);
+var mensaje
 
 switch(laHora)
 {
@@ -11,7 +12,7 @@ switch(laHora)
 	case 9:
 	case 10:	
 	case 11:
-		console.log("Es de mañana.")
+		mensaje=("Es de mañana.")
 		break;
 
 	case 12:
@@ -22,16 +23,16 @@ switch(laHora)
 	case 17:
 	case 18:
 	case 19:
-		console.log("es de tarde")
+		mensaje=("es de tarde")
 		break;
 		
 	default:
-	 	console.log("es de noche")
+	 	mensaje=("es de noche")
 }
 
 
 
-
+console.log(mensaje);
 
 
 
