@@ -84,29 +84,7 @@ else
 			}
 			else
 			{
-				if (suma>99) 
-				{
-					// suma=suma*90/100;
-					porcentaje=90;
-				}
 
-				else
-				{
-					if (suma>49)
-					{
-						// suma=suma*95/100;
-						porcentaje=95;
-					}	
-					else 
-					{
-						if (suma<50) 
-						{
-							porcentaje=115;
-						}
-
-					}//(suma>=50)	
-
-				}
 			}
 		}
 	}
