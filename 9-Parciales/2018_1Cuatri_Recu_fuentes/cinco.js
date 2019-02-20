@@ -26,8 +26,6 @@ precio=100
 		break;
 
 	case "Efectivo":	
-		
-		paquete
 		switch (paquete)
 		{
 			case "soloDesayunos":
