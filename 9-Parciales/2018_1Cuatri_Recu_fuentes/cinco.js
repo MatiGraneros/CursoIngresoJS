@@ -29,25 +29,25 @@ precio=100
 		switch (paquete)
 		{
 			case "soloDesayunos":
-				precio*70/100
+				precio=precio*70/100
 				break;
 
 			case "todoIncluido":
-				precio*65/100
+				precio=precio*65/100
 				break;
 
 			default:
-			precio*80/100	
+			precio=precio*80/100	
 		}
 		break;
 
 	case "Otro":
-		descuento=95
+		precio=precio*95/100
 		break;	
 
 	case "todoIncluido":
 	case "PayPal":
-		descuento=75
+		precio=precio*75/100
 		break;
 	}//switch(metodo)
 

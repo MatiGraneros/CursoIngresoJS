@@ -61,30 +61,46 @@ else
 
 if(valor1>valor2 && valor1>valor3 && valor1>valor4)
 {
-	mensaje="el valor mayor es "+valor1
+	mensaje="el valor mayor es "+valor1;
 }
-
 else
 {
 	if (valor2>valor1 && valor2>valor3 && valor2>valor4) 
 	{
-		mensaje="el valor mayor es "+valor2
+		mensaje="el valor mayor es "+valor2;
 	}
 	else
 	{
 		if (valor3>valor2 && valor3>valor1 && valor3>valor4) 
 		{
-			mensaje="el valor mayor es "+valor3
+			mensaje="el valor mayor es "+valor3;
 		}
 		else
 		{
 			if(valor4>valor2 && valor4>valor3 && valor4>valor1)
 			{
-				mensaje="el valor mayor es "+valor4
+				mensaje="el valor mayor es "+valor4;
 			}
 			else
 			{
-
+				if (valor1==valor2 && valor1==valor3 && valor1==valor4) 
+				{
+					mensaje="el valor mayor es "+valor1;
+				}
+				else
+				{
+					// if (valor1<valor2 && valor1<valor3 && valor1<valor4 && valor2==valor3 || valor2==valor4 || valor3==valor4) 
+					// {
+					// 	mensaje="el valor mayor es "+valor1;
+					// }
+					// else
+					// {
+					// 	// if(valor1<valor2 && valor1<valor3 && valor1<valor4 && valor2==valor3 && valor2==valor4 && valor3==valor4)
+					// 	// {
+					// 	// 	mensaje="el valor mayor es "+valor2;
+					// 	// }
+					// }		
+				}
 			}
 		}
 	}
