@@ -7,20 +7,20 @@ function mostrar()
 var acumulador=0;
 var contador=0;
 var respuesta=true;
-var num1;
+var numero;
 
 
 while(respuesta==true)
 	{	
 	contador++;
-	num1=prompt("insertar numero "+ contador);
-	num1=parseFloat(num1);
- 	while(isNaN(num1));
+	numero=prompt("insertar numero "+ contador);
+	numero=parseFloat(numero);
+ 	while(isNaN(numero))
  		{
- 		num1=prompt("insertar numero"+ contador);
-		num1=parseFloat(num1);
+ 		numero=prompt("insertar numero "+ contador);
+		numero=parseFloat(numero);
  		}	
- 	acumulador=num1+acumulador;
+ 	acumulador=numero+acumulador;
  	respuesta=confirm("queres otro numero? (escribi si, de lo contrario dejalo en blanco)");
  	}
 

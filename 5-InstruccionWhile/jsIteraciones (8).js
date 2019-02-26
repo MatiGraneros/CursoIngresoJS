@@ -14,6 +14,11 @@ while(respuesta==true)
 	contador++;
 	numero=prompt("insertar numero "+ contador);
 	numero=parseFloat(numero);
+	while(isNaN(numero))
+ 		{
+ 		numero=prompt("insertar numero "+ contador);
+		numero=parseFloat(numero);
+ 		}
 	if (numero>0) 
 	 	{
 	 		positivo=numero+positivo;

@@ -3,14 +3,19 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var Numero
+	var numero
 
 while(contador<5)							
 	{
 		contador++;				
-		Numero=prompt("ingrese otro numero "+contador);
-		Numero=parseFloat(Numero);
-		acumulador=Numero+acumulador;
+		numero=prompt("ingrese otro numero "+contador);
+		numero=parseFloat(numero);
+		while(isNaN(numero))
+	 		{
+	 		numero=prompt("insertar numero "+ contador);
+			numero=parseFloat(numero);
+	 		}
+		acumulador=numero+acumulador;
 	}
 
 document.getElementById('suma').value=acumulador;
