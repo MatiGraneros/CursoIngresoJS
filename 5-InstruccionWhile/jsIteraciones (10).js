@@ -11,6 +11,8 @@ var resultado;
 var contadorPositivos=0;
 var contadorNegativos=0;
 var contadorCeros=0;
+var contadorPares=0;
+var promedioNegativos;
 
 
 while(respuesta==true)
@@ -23,9 +25,16 @@ while(respuesta==true)
 	 		numero=prompt("insertar numero "+ contador);
 			numero=parseFloat(numero);
 	 		}
+		if (numero==0)
+			{
+				contadorCeros++;
+			}
+		
+		else
+		{
 		if (numero<0) 
 		 	{
-		 		negativo=numero+negativo;
+		 		negativo=numero+negativo;	
 		 	}
 		else
 			{
@@ -34,26 +43,37 @@ while(respuesta==true)
 				positivos=numero+positivos;
 				}
 			}		
+		
 		if (numero>0) 
 			{
-				contadorPositivos++
+				contadorPositivos++;
 			} 	
-		if (numero<0)
+		else
 			{
-				contadorNegativos++
+			if (numero<0)
+				{
+				contadorNegativos++;
+				}
 			}
-		if (numero==0)
+		
+		if (numero%2==0) 
 			{
-				contadorCeros++
-			}	
+				contadorPares++;
+			}		
+
+		}
  	respuesta=confirm("queres otro numero? (escribi si, de lo contrario dejalo en blanco)");
  	}
 
- console.log("negativos suma: "+negativo);
- console.log("postivos suma: "+positivos);
- console.log("contar +: "+contadorPositivos);
- console.log("contar -: "+contadorNegativos);
- console.log("contar 0's: "+contadorCeros);
+console.log("negativos suma: "+negativo);
+console.log("postivos suma: "+positivos);
+console.log("contar +: "+contadorPositivos);
+console.log("contar -: "+contadorNegativos);
+console.log("contar 0's: "+contadorCeros);
+console.log("contar pares: "+contadorPares);
+promedioNegativos=negativo/contadorNegativos;
+console.log("promedio negativos: "+promedioNegativos);
+
 
 
 }//FIN DE LA FUNCIÓN

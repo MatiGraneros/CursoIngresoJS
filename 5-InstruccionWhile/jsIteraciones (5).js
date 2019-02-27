@@ -12,3 +12,4 @@ while(!(sexo=="f" || sexo=="m"))
 
 
 }//FIN DE LA FUNCIÓN
+
