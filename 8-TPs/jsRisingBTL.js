@@ -108,7 +108,6 @@ function ComenzarIngreso ()
 		}	
 
 		break;
-
 	}
 
 
@@ -118,20 +117,4 @@ function ComenzarIngreso ()
 	document.getElementById('Sueldo').value=sueldo;
 	document.getElementById('Legajo').value=legajo;
 	document.getElementById('Nacionalidad').value=nacionalidad;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

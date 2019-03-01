@@ -1,33 +1,20 @@
 function mostrar()
 {
 
-var precio;
-var descuento;
-var descontado;
-var preciofinal;
+	var precio;
+	var porcentaje;
+	var descuento;
+	var precioConporcentaje;
 
-	precio=prompt("Precio");
-		precio=parseInt(precio);
+	precio=prompt("Ingrese el precio");
+	precio=parseFloat(precio);
+	porcentaje=prompt("Ingrese el porcentaje");
+	porcentaje=parseFloat(porcentaje);
 
-	descuento=prompt("Porcentaje de descuento");
-		descuento=parseInt(descuento);
+	descuento=precio*porcentaje/100;
+	precioConDescuento=precio-descuento;
 
-	descontado=precio*descuento/100;
-		descontado=parseInt(descontado);
-
-	preciofinal=precio-descontado;
-		preciofinal=parseInt(preciofinal);
-
-			document.getElementById('elPrecioFinal').value=preciofinal;
-
-
-
-
-
-/*1.quiero la request
-2.quiero el descuento
-3.quiero el precio descontado
-3.quiero mostrarlo en el value (alert en otros casos)*/
+	document.getElementById('elPrecioFinal').value=precioConDescuento;
 
 
 
