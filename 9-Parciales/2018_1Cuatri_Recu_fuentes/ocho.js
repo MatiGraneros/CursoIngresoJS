@@ -16,7 +16,8 @@ var sumaNegativos=0;
 var numeroYLetra;
 var maximo=-100;
 var minimo=100;
-
+var letraNumeroMaximo;
+var letraNumeroMinimo; 
 
 while(respuesta==true)
 {
@@ -63,11 +64,13 @@ while(respuesta==true)
 
 			if(maximo<numero)
 			{
-			maximo=numero;	
+			maximo=numero;
+			letraNumeroMaximo=maximo+letra;	
 			}
 			if (minimo>numero)
 			{
 			minimo=numero;
+			letraNumeroMinimo=minimo+letra;
 			}	
 
 
@@ -79,13 +82,15 @@ while(respuesta==true)
 
 
 
-console.log("cantidad de pares "+contadorPares);
-console.log("cantidad de inpares "+contadorInpares);
-console.log("cantidad de ceros "+contadorCeros);
-console.log("promedio de Positivos "+promedioPositivos);
-console.log("suma de negativos "+sumaNegativos);
-// console.log(" "numeroYLetra);
+document.write("cantidad de pares "+contadorPares+"<br>"); 
+document.write("cantidad de inpares "+contadorInpares+"<br>");
+document.write("cantidad de ceros "+contadorCeros+"<br>");
+document.write("promedio de Positivos "+promedioPositivos+"<br>");
+document.write("suma de negativos "+sumaNegativos+"<br>");
+// document.write(" "numeroYLetra);
 
-console.log("maximo "+maximo);
-console.log("minimo "+minimo);
+document.write("maximo "+maximo+"<br>");
+document.write("minimo "+minimo+"<br>");
+document.write("letra maximo"+letraNumeroMaximo+"<br>");
+document.write("letra minimo "+letraNumeroMinimo+"<br>");
 }
