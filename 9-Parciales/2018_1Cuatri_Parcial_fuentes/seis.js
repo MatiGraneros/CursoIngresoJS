@@ -21,11 +21,17 @@ function mostrar()
 				{
 					mensaje="es de tarde";
 				}
+				else
+				{
+					if (hora>) 
+					{
+
+					}
+				}
 			}
+
 			break;
 
-		default:
-			mensaje="es de noche";
 	}
 
 
