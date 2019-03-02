@@ -55,10 +55,10 @@ function mostrar()
 		}
 	}
 	
-promedio=acumulador/contador;
-/*A*/alert("el promedio es "+promedio);
-/*B*/alert("el sexo de la nota minima es "+sexoNotaMinima);
-/*C*/alert("cantidad de varones con seis o mas "+contadorMasculinosMayorIgualSeis);
+	promedio=acumulador/contador;
+	/*A*/alert("el promedio es "+promedio);
+	/*B*/alert("el sexo de la nota minima es "+sexoNotaMinima);
+	/*C*/alert("cantidad de varones con seis o mas "+contadorMasculinosMayorIgualSeis);
 
 
 
