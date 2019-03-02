@@ -20,8 +20,8 @@ var mensaje;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	numeroSecreto=Math.floor(Math.random()*10)+1;		 
-			alert(numeroSecreto);
+	numeroSecreto=Math.floor(Math.random()*100)+1;		 
+			// alert(numeroSecreto);
 }
 
 
@@ -38,16 +38,17 @@ function verificar()
 
 		if(numero!=numeroSecreto)
 		{
-			document.getElementById('intentos').value=contadorIntentos++;
+
+			document.getElementById('intentos').value=parseInt(contadorIntentos++);
 			if (numero>numeroSecreto) 
 			{
 				sePaso=numero-numeroSecreto;
-				alert("Se paso "+sePaso+" numeros");
+				mensaje=("Se paso "+sePaso+" numeros");
 			}
 			else
 			{
 				falta=numeroSecreto-numero;
-				alert("faltan "+falta+" numeros");
+				mensaje=("faltan "+falta+" numeros");
 			}
 		}
 
@@ -81,8 +82,15 @@ function verificar()
 				case "9":
 				case "10":
 					mensaje="falta técnica";  		
-					break;
-			
+					break;	
+
+				default:
+					if (document.getElementById('intentos').value>10) 
+					{
+						mensaje="amor";
+					}	
+
+					
 			}
 			contadorIntentos=contadorIntentos-contadorIntentos+1;
 		}

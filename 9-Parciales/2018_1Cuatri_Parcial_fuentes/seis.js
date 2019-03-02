@@ -8,30 +8,45 @@ function mostrar()
 	hora=parseFloat(hora);
 
 
+ 
+
+
 	switch(hora)
 	{
-		case hora:
-			if (hora>=6 && hora<=11) 
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
+			mensaje="es de mañana";
+			break;
+
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+		case 16:
+		case 17:
+		case 18:
+		case 19:
+			mensaje="es de tarde";
+			break;	
+
+		default:
+			if (hora>=20 && hora<=24 || hora<=5 && hora>=1) 
 			{
-				mensaje="es de mañana";
+				mensaje="es de noche";
+				if(hora<=24 && hora>=20)
+				{
+					mensaje="a dormir";
+				}
 			}
 			else
 			{
-				if (hora>=12 && hora<=19) 
-				{
-					mensaje="es de tarde";
-				}
-				else
-				{
-					if (hora>) 
-					{
-
-					}
-				}
-			}
-
+				mensaje="no es una hora valida";
+			}	
 			break;
-
 	}
 
 
