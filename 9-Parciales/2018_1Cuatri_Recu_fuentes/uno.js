@@ -3,20 +3,19 @@ function mostrar()
 {
 
 
+	var ancho;
+	var largo;
+	var perimetro;
 
-var ancho;
-var largo;
-	
-	ancho=prompt("ingrese ancho");
-	largo=prompt("ingrese largo");
+	ancho=prompt("ingrese el ancho del rectangulo");
+	ancho=parseFloat(ancho);
 
-	var total1=ancho*2;
-	var total2=largo*2;
+	largo=prompt("ingrese el largo del rectangulo");
+	largo=parseFloat(largo);
 
-	 var resultado=(total1+total2);
+	perimetro=ancho*2+largo*2;
 
-	 alert(resultado);
-
+	alert(perimetro);
 
 
 

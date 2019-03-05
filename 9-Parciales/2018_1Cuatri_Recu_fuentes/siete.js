@@ -1,53 +1,64 @@
 function mostrar()
 {
 
-var notas;
-var respuesta=true;
-var contador=0;
-var acumulador=0;
-var sexo;
-var acumuladorSexo="Sexos: ";
-
-while(contador<5)
-{
-	contador++
-	notas=prompt("ingrese sus notas");
-	notas=parseFloat(notas);
-	while(isNaN(notas))
-	{
-		notas=prompt("Incorrecto, Ingrese valor valido");
-		notas=parseFloat(notas);
-	}
-	while(!(notas<=10 && notas>0))
-	{
-		notas=prompt("Incorrecto, Ingrese valor valido");
-		notas=parseFloat(notas);	
-	}
-	acumulador=notas+acumulador;
-	respuesta=confirm("queres ingresar otra nota?")
-
-
-}
-
-	
+	var sexo;
+	var notas;
+	var contador=0;
+	var maximo=1;
+	var minimo=10;
+	var sexoNotaMinima;
+	var suma=0;
+	var promedio;
+	var contadorVaronesMasDeSeis=0;
 
 	while(contador<5)
 	{
-		contador++
-		sexo=prompt("ingresar sexo");
+		contador++;
+		notas=prompt("ingrese la nota");
+		notas=parseFloat(notas);
+		while(isNaN(notas) || !(notas<=10 && notas>=1))
+		{
+			notas=prompt("ERROR, ingrese una nota valida");
+			notas=parseFloat(notas);
+		}
+
+		sexo=prompt("ingrese el sexo");
 		while(isNaN(sexo)==false || sexo!="f" && sexo!="m")
 		{
-			sexo=prompt("error");
+			sexo=prompt("ERROR, ingrese un sexo valido");
 		}
-			acumuladorSexo=sexo+acumuladorSexo;
+
+		if (notas>maximo) 
+		{
+			maximo=notas;
+		}
+		if (notas<minimo) 
+		{
+			minimo=notas;
+			sexoNotaMinima=sexo;
+			if (sexoNotaMinima=="f") 
+			{
+				sexoNotaMinima="femenino";
+			}
+			else
+			{
+				sexoNotaMinima="masculino";
+			}
+		}
+
+		suma=notas+suma;
+
+		if (sexo=="m") 
+		{
+			if (notas>=6) 
+			{
+				contadorVaronesMasDeSeis++;
+			}
+		}
 	}
 
-	alert(acumulador);
-	
+promedio=suma/contador;
 
-
-
-
-
+alert("el promedio de notas es de: "+promedio+". La nota mas baja es de "+minimo+" y el sexo de esa persona es "+sexoNotaMinima+". La cantidad de varones con 6 o mas es de "+contadorVaronesMasDeSeis);
 
 }

@@ -1,61 +1,129 @@
 function mostrar()
 {
 
-var metodo;
-var descuento;	
-var habitacion;
-var paquete;
+	var dia;
+	var mensaje;
 
-metodo=prompt("Ingrese el metodo de pago");
-habitacion=prompt("Ingrese Habitacion");
-paquete=prompt("Ingrese el paquete");
+	dia=prompt("ingrese un dia de la semana");
 
-switch(habitacion)
-{
-case "1":
-precio=100
-	switch(metodo)
+
+	switch(dia)
 	{
-	case "Visa":
-	case "MercadoPago":
-		precio=precio*90/100
-		break;
+		case "sabado":
+		case "domingo":
+			mensaje="buen finde";
+			break;
 
-	case "PayPal":
-		precio=precio*85/100
-		break;
+		case "lunes":
+		case "martes":
+		case "miercoles":
+		case "jueves":
+		case "viernes":
+			mensaje="a trabajar";
+			break;
 
-	case "Efectivo":	
-		switch (paquete)
-		{
-			case "soloDesayunos":
-				precio=precio*70/100
-				break;
+		default:
+			mensaje="no es un dia valido";
+			break;			
+	}
 
-			case "todoIncluido":
-				precio=precio*65/100
-				break;
-
-			default:
-			precio=precio*80/100	
-		}
-		break;
-
-	case "Otro":
-		precio=precio*95/100
-		break;	
-
-	case "todoIncluido":
-	case "PayPal":
-		precio=precio*75/100
-		break;
-	}//switch(metodo)
+	alert(mensaje);
 
 
-}
 
 
-alert(precio);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var metodo;
+// var descuento;	
+// var habitacion;
+// var paquete;
+
+// metodo=prompt("Ingrese el metodo de pago");
+// habitacion=prompt("Ingrese Habitacion");
+// paquete=prompt("Ingrese el paquete");
+
+// switch(habitacion)
+// {
+// case "1":
+// precio=100
+// 	switch(metodo)
+// 	{
+// 	case "Visa":
+// 	case "MercadoPago":
+// 		precio=precio*90/100
+// 		break;
+
+// 	case "PayPal":
+// 		precio=precio*85/100
+// 		break;
+
+// 	case "Efectivo":	
+// 		switch (paquete)
+// 		{
+// 			case "soloDesayunos":
+// 				precio=precio*70/100
+// 				break;
+
+// 			case "todoIncluido":
+// 				precio=precio*65/100
+// 				break;
+
+// 			default:
+// 			precio=precio*80/100	
+// 		}
+// 		break;
+
+// 	case "Otro":
+// 		precio=precio*95/100
+// 		break;	
+
+// 	case "todoIncluido":
+// 	case "PayPal":
+// 		precio=precio*75/100
+// 		break;
+// 	}//switch(metodo)
+
+
+// }
+
+
+// alert(precio);
 
 
 

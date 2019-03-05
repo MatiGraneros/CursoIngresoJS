@@ -77,6 +77,10 @@ function mostrar()
 	
 	alert(letraNumeroMaximo+" "+letraNumeroMinmo);
 
+"lskdfjnslkdf"+contadorCeros+"<br>";
+"lskdfjnslkdf"+contadorCeros+"<br>";
+"lskdfjnslkdf"+contadorCeros+"<br>";
+"lskdfjnslkdf"+contadorCeros+"<br>";
 
 
 
